@@ -63,6 +63,15 @@
     border-radius: 30px;
     box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.2);
   }
+    a {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #2563eb !important; /* Muda para azul ao passar o mouse */
+    text-decoration: underline !important; /* Adiciona um sublinhado sutil */
+    cursor: pointer; /* Garante que o cursor vire uma mãozinha */
+}
   </style>
 </head>
 <body>
@@ -75,11 +84,23 @@
     <div class="contact-info">
     
       <div>
-        <p><strong>Localização:</strong> Petrópolis, Rio de Janeiro</p>
-        <p><strong>Telefone:</strong> (24) 98182-6285</p>
+        <p> <strong>Localização:</strong> 
+            <a href="https://www.google.com/maps/search/?api=1&query=Petrópolis,+Rio+de+Janeiro" target="_blank" style="text-decoration: none; color: inherit;">
+                Petrópolis, Rio de Janeiro 
+            </a> 
+        </p>      
+        <p> <strong>Telefone:</strong> 
+            <a href="tel:+5524981826285" style="text-decoration: none; color: inherit;">
+                (24) 98182-6285
+            </a>
+        </p>
       </div>
       <div>
-        <p><strong>Email:</strong> lukas2209@outlook.com</p>
+        <p><strong>Email:</strong> 
+            <a href="mailto:lukas2289@outlook.com" style="text-decoration: none; color: inherit; font-weight: bold; color: #2563eb;">
+                lukas2289@outlook.com
+            </a>
+        </p>
       </div>
     </div>
 
